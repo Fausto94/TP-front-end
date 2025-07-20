@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tienda de celulares con los mejores precios y atención personalizada.">
+    <meta name="keywords" content="celulares, smartphones, barato, motorola, samsung, xiaomi, comprar">
+    <meta name="author" content="Tecnoland FG">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnoland FG</title>
+    <link rel="icon" href="Images/FG-logo2-transp.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" >
+</head>
+<body>
+    <header id="header">
+        <img class="logo" src="Images/FG-logo2-transp.png" alt="Logo de la empresa">
+        <nav>
+            <input type="checkbox" id="check" style="display:none;">
+            <label for="check" class="barras">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#form-contacto">Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="carrito" class="carrito">
+                <h3><i class="fa-solid fa-cart-shopping"></i> Carrito de Compras (<span id="contador">0</span>)</h3>
+                <ul id="lista-carrito" class="items-carrito"></ul>
+                <p>Total: $<span id="total">0</span></p>
+                <button id="boton-vaciar">Vaciar Carrito</button>
+            </div>
+        </section>
+        <section id="productos" class="lista-productos">
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/GalaxyA06.jpeg" alt="Galaxy A06">
+                    </div> 
+                    <div class="datos">
+                        <p>Samsung Galaxy A06</p>
+                        <p class="price">$289.999</p>
+                    </div>
+                    <button class="boton-agregar" data-id="1">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/GalaxyA15.jpeg" alt="Galaxy A15">
+                    </div> 
+                    <div class="datos">
+                        <p>Samsung Galaxy A15</p>
+                        <p class="price">$339.999</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="2">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/MotoE50.jpeg" alt="Moto E50">
+                    </div> 
+                    <div class="datos">
+                        <p>Motorola Edge 50</p>
+                        <p class="price">$661.156</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="3">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/MotoG24.jpeg" alt="Moto G24">
+                    </div>
+                    <div class="datos">
+                        <p>Motorola G24</p>
+                        <p class="price">$369.999</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="4">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/MotoG32.jpeg" alt="Moto G32">
+                    </div>
+                    <div class="datos">
+                        <p>Motorola G32</p>
+                        <p class="price">$502.999</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="5">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/s25-ultra-titaniumblack-device_1.jpeg" alt="Galaxy S25">
+                    </div>
+                    <div class="datos">
+                        <p>Samsung Galaxy S25</p>
+                        <p class="price">$1.799.000</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="6">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/Diseno-sin-titulo-51-667368d72a06b-O.jpeg" alt="Redmi A3">
+                    </div>
+                    <div class="datos">
+                        <p>Xiaomi Redmi A3</p>
+                        <p class="price">$189.999</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="7">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/db5f3c12-da90-4eb3-a401-959f13be4a85.8d09dc8c189033ab827b515e3a0eb540.jpeg" alt="Redmi 11">
+                    </div>
+                    <div class="datos">
+                        <p>Xiaomi Redmi Note 11</p>
+                        <p class="price">$424.999</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="8">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/s24fe.jpeg" alt="Galaxy S24">
+                    </div>
+                    <div class="datos">
+                        <p>Samsung Galaxy S24 FE</p>
+                        <p class="price">$1.349.999</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="9">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/D_Q_NP_718466-MLA77263250811_062024-O.jpeg" alt="redmi 13">
+                    </div>
+                    <div class="datos">
+                        <p>Xiaomi redmi 13</p>
+                        <p class="price">$540.999</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="10">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/GalaxyA15.jpeg" alt="Galaxy A15">
+                    </div> 
+                    <div class="datos">
+                        <p>Samsung Galaxy A15</p>
+                        <p class="price">$339.999</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="2">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/MotoG24.jpeg" alt="Moto G24">
+                    </div>
+                    <div class="datos">
+                        <p>Motorola G24</p>
+                        <p class="price">$369.999</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="4">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/MotoG32.jpeg" alt="Moto G32">
+                    </div>
+                    <div class="datos">
+                        <p>Motorola G32</p>
+                        <p class="price">$502.999</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="6">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/Diseno-sin-titulo-51-667368d72a06b-O.jpeg" alt="Redmi A3">
+                    </div>
+                    <div class="datos">
+                        <p>Xiaomi Redmi A3</p>
+                        <p class="price">$189.999</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="7">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/MotoE50.jpeg" alt="Moto E50">
+                    </div> 
+                    <div class="datos">
+                        <p>Motorola Edge 50</p>
+                        <p class="price">$661.156</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="3">Comprar</button>
+                </div>
+        </section>
+    </main>
+
+    <footer id="nosotros">
+        <div class="contacto">
+            <div class="icono instagram">
+                <a href="https://www.instagram.com/bymarielashowroom/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="icono facebook">
+                <a href="https://www.instagram.com/bymarielashowroom/"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+        <p>Derechos reservados &copy; 2025</p>
+        <p>Desarrollado por: Fausto Garcia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

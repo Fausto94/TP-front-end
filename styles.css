@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Share Tech", sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: rgb(17, 18, 78);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.logo{
+    margin: 10px;
+    max-height: 70px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 100%;
+}
+
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a{
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    height: 100%;
+    align-items: center;
+    z-index: 1;
+    color: #fff;
+}
+
+nav ul li{
+    margin: 0 20px;
+    font-size: 20px;    
+    display: flex;
+    padding: 6px;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+    cursor: pointer;
+} 
+nav ul li a:hover{
+    text-decoration: underline;
+}
+ 
+.barras{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    position:relative;
+    left: 0;
+}
+
+.fa-bars{
+    color: #fff;
+}
+#check{
+    display: none;
+}
+   
+@media(max-width: 768px){
+    
+    header{
+        flex-direction: row-reverse;
+    }
+    nav ul li{
+        padding: 4px 4px;
+        margin: 8px;    
+    }
+
+    nav ul li :hover{
+        border-bottom: 0;
+        background-color: rgb(28, 221, 255);
+    }
+
+    .barras{
+        display: block;
+        top: 0%;
+        margin: 5px 13px;
+    }
+    .nav-list{
+        flex-direction: column;
+        position:absolute;
+        height:fit-content;
+        width:max-content;
+        background-color: rgb(17, 18, 78);
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    #check:checked ~ .nav-list{
+        left: 0;
+    }
+}
+
+main{
+margin-bottom: 20px;
+}
+
+.banner{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(Images/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.anuncio{
+    color: #fff;
+    font-size: 50px;
+    font-family:"Quantico", sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+.lista-productos{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    min-height: 300px;
+    margin: 10px;
+    min-width: 200px;
+    box-shadow: 0 1px 5px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: outline 0.05s ease-out;
+}
+.card a{
+    text-decoration: none;
+    color: #000;
+}
+.boton-agregar{
+    margin-bottom: 5px;
+}
+.producto-img{
+    width: 100%;
+    height: 75%;
+}
+.producto-img img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+    max-height: 200px;
+    
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 25%;
+    width: 100%;
+    font-size: 1.2em;
+    padding: 6px 5px;
+}
+.datos p{
+    margin: 0;
+    padding-left: 6px;
+}
+.card:hover{
+    outline: 2px solid rgb(0, 132, 255);
+    box-shadow: 0 1px 10px rgb(0, 0, 0, 1);
+}
+
+.carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgb(0, 0, 0, 0.5);
+}
+.carrito h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.carrito ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.carrito ul li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.carrito ul li:last-child{
+    border-bottom: none;
+}
+.carrito p{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px){
+
+    .card{
+        width: 40%;
+        min-width: 0;
+        min-height: 0;
+    }
+    .datos{
+        font-size: 1em;
+    }
+    .producto-img img{
+        object-fit: contain;
+    }
+}
+ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    padding: 40px 15px;
+}
+.grid-container p{
+    line-height: 1;
+    font-size: 30px;
+}
+.grid-container div{
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+.persona{
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.persona i{
+    font-size: 40px;
+    color: #000;
+}
+.persona b:hover{
+    text-shadow: rgb(252, 240, 69, 1) 0px 0px 5px;
+
+}
+
+.reseña{
+    font-size: 17px;
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.form-container{
+    border-radius: 25px;
+    display: flex;
+    background: linear-gradient( rgb(0, 132, 255) 30%, rgb(17, 18, 78) 100%);
+    margin: 30px auto;
+    padding: 7px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 1px 2px 7px rgb(0, 0, 0, 1);
+    color: #000;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+input{
+    width: 250px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding-left: 4px;
+    border: 0;
+}
+
+.mensaje label{
+    display: flex;
+    align-self: flex-start;
+}
+
+textarea{
+    width: 60%;
+    font-size: 25px;
+    border-radius: 10px;
+    padding-left: 4px;
+    border: 0;
+    resize: none;
+}
+
+button{
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 3px 9px;
+    border: 0;
+    transition: all 0.12s;
+}
+button:hover{
+    background: radial-gradient(circle, rgb(0, 132, 255) 30%, rgb(17, 18, 78) 100%);
+    outline: 2px solid #00bfff;
+    cursor: pointer;
+}
+
+.ir_a_productos{
+    background: radial-gradient(circle, rgb(17, 18, 78) 30%, rgb(0, 132, 255) 100%);
+    color: #fff;
+    padding: auto;
+    font-size: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.ir_a_productos a{
+    line-height: 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+#boton-vaciar{
+    background: #000;
+    color: #fff;
+    margin-top: 25px;
+}
+#boton-vaciar:hover{
+    outline: 2px solid #fd1d1d;
+    color: #fd1d1d;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+
+    .anuncio{
+        font-size: 40px;
+    }
+
+    .form-container{
+        width: 90%;
+    }
+    form{
+        font-size: 20px;
+    }
+    input{
+        width: 75%;
+        font-size: 20px;
+    }
+    textarea{
+        width: 90%;
+        font-size: 20px;
+    }
+    button{
+        font-size: 20px;
+    }
+    .ir_a_productos{
+        font-size: 25px;
+        width: 70%;
+        margin: 15px 15% ;
+    }
+}
+
+footer{
+    background-color: rgb(17, 18, 78);
+    padding: 10px;
+    background-image: url(../Images/a-circuit-board-withe.png);
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
+    margin-top: 50px;
+}
+
+.contacto{
+    display: flex;
+    align-items: center;
+}
+
+.icono{
+    background-color: #fff;
+    display: flex;
+    box-shadow: 1px 1px 5px #000;
+    text-align: center;
+    color: #000;
+    height: 40px;
+    width: 40px;
+    margin: 7px;
+    padding: 7px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    font-size: 24px;
+}
+
+.icono a{
+    text-decoration: none;
+    color: rgb(17, 18, 78);
+}
+
+.instagram:hover{
+    background: linear-gradient(to bottom,#833ab4,#fd1d1d,#fcb045);
+}
+.facebook:hover{
+    background: #1877F2;
+}
+
+
+footer p{
+    color: #ffffff;
+    padding-top: 5px;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tienda de celulares con los mejores precios y atención personalizada.">
+    <meta name="keywords" content="celulares, smartphones, barato, motorola, samsung, xiaomi, comprar">
+    <meta name="author" content="Tecnoland FG">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnoland FG</title>
+    <link rel="icon" href="Images/FG-logo2-transp.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&family=Share+Tech&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" >
+</head>
+<body>
+    <header id="header">
+        <img class="logo" src="Images/FG-logo2-transp.png" alt="Logo de la empresa">
+        <nav>
+            <input type="checkbox" id="check" style="display:none;">
+            <label for="check" class="barras">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#form-contacto">Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="banner">
+            <h2 class="anuncio">Compra los mejores calulares<br>a los mejores precios</h2>
+        </div>
+
+        <section id="productos" class="lista-productos">
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/GalaxyA06.jpeg" alt="GalaxyA06">
+                    </div> 
+                    <div class="datos">
+                        <p>Samsung Galaxy A06</p>
+                        <p class="price">$289.999</p>
+                    </div>
+                    <button class="boton-agregar" data-id="1">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/GalaxyA15.jpeg" alt="GalaxyA15">
+                    </div> 
+                    <div class="datos">
+                        <p>Samsung Galaxy A15</p>
+                        <p class="price">$339.999</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="2">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/MotoE50.jpeg" alt="MotoE50">
+                    </div> 
+                    <div class="datos">
+                        <p>Motorola Edge 50</p>
+                        <p class="price">$661.156</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="3">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/MotoG24.jpeg" alt="MotoG24">
+                    </div>
+                    <div class="datos">
+                        <p>Motorola G24</p>
+                        <p class="price">$369.999</p>                    
+                    </div>
+                    <button class="boton-agregar">Comprar</button>
+                </div>
+                <div class="card">
+                    <div class="producto-img">
+                        <img src="Images/MotoG32.jpeg" alt="MotoG32">
+                    </div>
+                    <div class="datos">
+                        <p>Motorola G32</p>
+                        <p class="price">$502.999</p>                    
+                    </div>
+                    <button class="boton-agregar" data-id="4">Comprar</button>
+                </div>
+            </section>
+            <button class="ir_a_productos"><a href="productos.html">Ver mas productos 🠮</a></button>
+    </main>
+
+    <section class="resenias">
+        <div class="grid-container">
+            <p>Reseñas</p>
+            <div class="persona"><i class="fa-solid fa-circle-user"></i><b>⭐⭐⭐⭐⭐</b></div>
+            <div class="reseña">Excelente servicio y entrega rápida ¡Muy contento con mi compra! El celular llegó en perfectas condiciones y antes de 
+                lo esperado. Me enviaron el número de seguimiento al instante y respondieron todas mis dudas por WhatsApp. Totalmente recomendados.</div>
+            <div class="persona"><i class="fa-solid fa-circle-user"></i>⭐⭐⭐⭐</div>
+            <div class="reseña">Buen precio, pero la caja llegó un poco golpeada Compré un Samsung Galaxy y el precio era más bajo que en otras 
+                tiendas. El único detalle fue que la caja tenía un golpe, aunque el celular estaba intacto. Por lo demás, todo bien. Volvería a 
+                comprar.</div>
+            <div class="persona"><i class="fa-solid fa-circle-user"></i>⭐⭐⭐⭐⭐</div>
+            <div class="reseña">Atención personalizada y confiable Me ayudaron a elegir el modelo ideal según lo que necesitaba. Muy amables en 
+                todo momento. El producto es original, viene sellado y con garantía. Me dio confianza desde el principio. Gracias por todo.</div>
+        </div>
+    </section>
+
+    <section id="form-contacto" class="form-container">
+        <form action="https://formspree.io/f/mwplzlnw" method="POST">
+
+            <p>Formulario de contacto</p>
+
+            <div class="nombre">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" size="30">
+            </div>
+
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" size="30">
+            </div>
+
+            <div class="mensaje">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" rows="4" cols="31"></textarea>
+            </div>
+
+            <div class="submit-button">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+
+    <footer id="nosotros">
+        <div class="contacto">
+            <div class="icono instagram">
+                <a href="https://www.instagram.com/bymarielashowroom/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="icono facebook">
+                <a href="https://www.instagram.com/bymarielashowroom/"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+        <p>Derechos reservados &copy; 2025</p>
+        <p>Desarrollado por: Fausto Garcia</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
